@@ -2587,41 +2587,22 @@ body>article {
     margin-bottom: 100px; /* отступ между абзацами */
   }
 
-.horizontal-list {
-  list-style: none;       /* убираем маркеры */
-  margin: 0 auto;         /* автоматические отступы по бокам для центрирования */
-  padding: 0;
-  display: flex;
-  justify-content: center; /* выравнивание по центру */
-  flex-wrap: wrap;        /* перенос элементов, если не хватает места */
-  gap: 20px;
-  max-width: 100%;        /* чтобы не вылезало за пределы */
-  box-sizing: border-box; /* чтобы padding не влиял на ширину */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  gap: 20px;                            /* расстояние между элементами */
+  max-width: 800px;
+  margin: 0 auto;                      /* центрирование по ширине */
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.horizontal-list li a {
-  text-decoration: none;
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
   color: #333;
-  font-weight: bold;
-}
-
-.horizontal-list li a:hover {
-  color: #007BFF;
-}
-
-.vertical-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px;
-}
-
-.vertical-list li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.vertical-list li a:hover {
-  color: #007BFF;
 }
