@@ -2103,26 +2103,17 @@ ul.actions li:first-child {
 
 /* Wrappers */
 
-.wrapper {
-	background-image: url("images/bg.png");
-	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-	padding: 8em 0 8em 0;
-	text-align: center;
-}
-
 .wrapper.style1 {
 	background-image: none;
 	background-color: #fff;
 }
 
 .wrapper.style2 {
-	background-color: #fafafa;
-	text-shadow: 1px 1px 0px #fff;
+	background-color: var(--color-background2);
 }
 
 .wrapper.style3 {
 	background-color: #f4f4f4;
-	text-shadow: 1px 1px 0px #fff;
 }
 
 .wrapper.style4 {
@@ -2229,6 +2220,7 @@ body>article {
 #main {
 	padding: 10em 0 10em 0;
 	text-align: left;
+	background-color: var(--color-background1);
 }
 
 #main .image {
@@ -2583,26 +2575,40 @@ body>article {
 }
 
 .paragraf {
-    line-height: 1.6;    /* межстрочный интервал */
-    margin-bottom: 100px; /* отступ между абзацами */
-  }
+	line-height: 1.6;
+	/* межстрочный интервал */
+	margin-bottom: 100px;
+	/* отступ между абзацами */
+}
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
-  gap: 20px;                            /* расстояние между элементами */
-  max-width: 800px;
-  margin: 0 auto;                      /* центрирование по ширине */
-  padding: 10px;
-  box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	/* 3 колонки одинаковой ширины */
+	gap: 20px;
+	/* расстояние между элементами */
+	max-width: 800px;
+	margin: 0 auto;
+	/* центрирование по ширине */
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 .grid-item {
-  background-color: #f0f0f0;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
+	background-color: #f0f0f0;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+:root {
+	--color-primary: #43B3E0;
+	--color-secondary: #007BFF;
+	--color-background1: #fff1e0;
+	--color-background2: #8f98ff;
+	--color-text: #333333;
+	--color-accent: #FF6F61;
 }
